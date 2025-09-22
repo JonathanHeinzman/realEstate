@@ -1,0 +1,123 @@
+
+
+/* header */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-image: url(./realEstate-img-main/header.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    text-indent: 100px;
+    height: 350px;
+    
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    display: flex;
+    flex-direction: flex start;
+    font: arial;
+    line-height: 2;
+    
+}
+
+br {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/*main*/
+main {
+    margin-left: 100px;
+    margin-right: 100px;
+
+
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+
+}
+
+/*cards*/
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+
+}
+
+.house-card {
+    background-color: #dedede;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards .house-card {
+    width: 33.3%;
+    background: grey;
+    font-family: arial;
+   
+}
+
+.house-item-img {
+   overflow: hidden;
+  
+
+}
+    
+.house-item-text {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.price {
+    color: rgb(17, 128, 17);
+}
+
+.icon-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.btn-details {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 40px;
+    margin-bottom: 15px;
+}
