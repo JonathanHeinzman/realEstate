@@ -80,10 +80,10 @@ main {
    
 }
 
-.house-item-img {
-   overflow: hidden;
-  
-
+.house-item-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
     
 .house-item-text {
