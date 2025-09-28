@@ -41,8 +41,8 @@ a {
 }
 
 header p {
-    text-indent: -85px;
-    margin-left: 110px;
+    text-indent: 15px;
+    margin-left: 100px;
     padding-top: 140px;
     font-size: 30px;
     font-weight: bold;
@@ -72,6 +72,25 @@ main {
     padding: 20px;
 
 }
+@media((min-width:601px) and (max-width:768px)){
+    .about-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:600px){
+    .about-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+    }
+    img{
+        display: block;
+        margin: 10px auto;
+    }
+}
 
 /*cards*/
 
@@ -91,7 +110,6 @@ main {
 }
 
 .cards .house-card {
-    width: 33.3%;
     background: grey;
     font-family: arial;
 }
@@ -142,6 +160,22 @@ main {
     margin-bottom: 10px;
 }
 
+@media((min-width:601px) and (max-width:768px)){
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:600px){
+    .cards {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+    }
+}
+
 /* footer*/
 
 .footer-init {
@@ -186,7 +220,7 @@ main {
 
 }
 
-/* Conact Page */
+/* Contact Page */
 
 .header-contact {
    background-color: orange;
@@ -227,6 +261,11 @@ fieldset {
     padding: 5px;
 }
 
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 footer {
     display: flex;
     justify-content: space-around;
@@ -242,11 +281,88 @@ footer {
     border-left: 3px solid black;
     margin-left: 10px;
     padding-left: 10px;
+    text-decoration: underline;
 }
 
 .sm a{
     margin-right: 10px;
     color: black;
     
+}
+
+/* about page */
+
+.header-about {
+   background-color: orange;
+   height: 100px;
+}
+
+.about-us {
+    line-height: 2;
+}
+.meet-our-team {
+    display: flex;
+    flex-direction: column;
+    
+}
+.team-members {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Blog page */
+
+.header-blog {
+   background-color: orange;
+   height: 100px;
+}
+
+.blog-title img{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-evenly;
+}
+
+.blog-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: lightgray;
+}
+
+.blog-preview img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 100;
+}
+
+.blog-preview h2 {
+    font-size: 20px;
+}
+
+.date-posted {
+    text-decoration: underline;
+}
+
+.btn-blog {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 40px;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
